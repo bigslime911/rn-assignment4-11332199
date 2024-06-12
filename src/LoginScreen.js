@@ -37,7 +37,7 @@ const LoginIn = () => {
           </Text>
         </TouchableOpacity>
         {/**I have to do this one before i submit the work */}
-        <View style={{flexDirection:"row", justifyContent:'space-between'}}>
+        <View style={{flexDirection:"row", justifyContent:'space-between', marginTop: 40}}>
           <View style={{ borderColor:'#AFB0B6', borderBottomWidth:2, width:'auto'}}></View>
           <View>
             <Text>
@@ -46,8 +46,19 @@ const LoginIn = () => {
           </View>
           <View></View>
         </View>
-        <View>
-
+        <View style={styles.icons}>
+          <TouchableOpacity >
+            <Image source={require('../assets/apple.png')}/>
+          </TouchableOpacity>
+          <TouchableOpacity >
+            <Image source={require('../assets/google.png')}/>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image source={require('../assets/facbook.png')}/>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.textbelow}>
+          <Text style={styles.firstTextbelow}>Haven’t an account? <Text style={styles.secondTextbelow}>Register</Text> </Text>
         </View>
 
       </ScrollView>
@@ -78,7 +89,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
   },
   job:{
-    color:'#0D0D26',
+    color: '#BDBEC2',
     marginTop: 5,
     fontSize: 14
 
@@ -107,7 +118,27 @@ const styles = StyleSheet.create({
   login:{
     color: '#fff',
     fontSize: 16,
+  },
+  icons:{
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    
+    marginTop: 50,
+     
+  },
+  textbelow:{
+    alignItems: 'center',
+    marginTop: 30,
+  },
+  firstTextbelow :{
+    color: '#BDBEC2'
+  },
+  secondTextbelow :{
+    color: '#356899'
   }
+
+  
+  
 })
 
 export default LoginIn
