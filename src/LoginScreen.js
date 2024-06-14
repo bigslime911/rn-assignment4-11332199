@@ -7,7 +7,7 @@ const LoginIn = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView style={{}}>
         <View style={styles.title}>
           <Text style={styles.header}>
           Jobizz
@@ -28,7 +28,6 @@ const LoginIn = () => {
         <View>
           <TextInput
             placeholder='Email'
-            value='test'
             style={styles.emailInput}
           />
         </View>
@@ -72,6 +71,7 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 5,
     marginHorizontal: 20,
+    
   },
   title:{
     marginTop: 90,
