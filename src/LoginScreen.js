@@ -28,6 +28,7 @@ const LoginIn = () => {
         <View>
           <TextInput
             placeholder='Email'
+            value='test'
             style={styles.emailInput}
           />
         </View>
@@ -36,15 +37,15 @@ const LoginIn = () => {
             Log In 
           </Text>
         </TouchableOpacity>
-        {/**I have to do this one before i submit the work */}
-        <View style={{flexDirection:"row", justifyContent:'space-between', marginTop: 40}}>
-          <View style={{ borderColor:'#AFB0B6', borderBottomWidth:2, width:'auto'}}></View>
+        
+        <View style={{flexDirection:"row", alignItems: 'center', justifyContent:'space-around', marginTop: 60}}>
+          <View style={{ borderBottomColor: '#BDBEC2',width: 110,borderBottomWidth: 1,marginVertical: 10,}}></View>
           <View>
-            <Text>
+            <Text style={{color:'#BDBEC2'}}>
             Or continue with
             </Text>
           </View>
-          <View></View>
+          <View style={{ borderBottomColor: '#BDBEC2',width: 110,borderBottomWidth:1,marginVertical: 10,}}></View>
         </View>
         <View style={styles.icons}>
           <TouchableOpacity >
