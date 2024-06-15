@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView, ScrollView, StyleSheet, Image, TextInput, FlatList, TouchableOpacity} from 'react-native'
 import React from 'react'
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, Entypo } from '@expo/vector-icons';
 import FeatureJobsMockUp from './FeatureJobsMockUp';
 import PopularjobsMockUp from './PopularjobsMockUp';
 
@@ -18,15 +18,18 @@ const Home = () => {
             <Image source={require('../assets/profilepic.png')}/>
           </View>
         </View>
-        <View style={{flexDirection: 'row' , justifyContent: 'space-between'}}>
-          <View style={styles.Input} >
-            <AntDesign name="search1" size={24} color="black" />
-            <TextInput placeholder='Search' style={{marginLeft: 10, width: 260}} />
+        <View style={{flexDirection: 'row', alignItems: 'center',justifyContent: 'space-between'}}>
+          <View style={styles.Input}>
+           <AntDesign name="search1" size={24} color="black" />
+           <TextInput placeholder='Search' style={{width: 230}}/>
+           
           </View>
-          <View  style={{backgroundColor: 'red'}}>
-            <Image/>
+          <View style={{padding:10,borderRadius:10, backgroundColor: '#DDDDDD', marginTop: 40}}>
+            <Image source={require('../assets/filter99.png')}/>
           </View>
+          
         </View>
+        
         <View style={styles.featureSection}>
           <Text style={styles.jobs}>Featured Jobs</Text>
           <Text style={styles.seeAll}>See all</Text>
@@ -119,6 +122,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#DDDDDD',
     padding:10,
     borderRadius:10,
+    width: 300,
   },
   featureSection:{
     marginTop : 45,
